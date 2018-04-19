@@ -1,7 +1,5 @@
 fib1 = 0
 fib2 = 1
-
-l = []
 _sum = 0
 
 while fib1 < 4000000:

@@ -4,12 +4,10 @@ What is the largest prime factor of the number 600851475143?'''
 
 def max_prime(n):
     d = 2
-
     while n > 1:
         while n % d == 0:
             yield d
             n = n // d
-
         d += 1
 
 

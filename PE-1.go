@@ -1,3 +1,5 @@
+// https://projecteuler.net/problem=1
+
 package main
 
 import "fmt"

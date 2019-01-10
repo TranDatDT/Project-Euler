@@ -6,9 +6,12 @@ Find the largest palindrome made from the product of two 3-digit numbers'''
 
 
 li = []
+max_number = -1
 for numb1 in range(999, 0, -1):
     for numb2 in range(999, 0, -1):
-        if str(numb1 * numb2) == str(numb1 * numb2)[::-1]:
-            li.append(numb1 * numb2)
+    	mul = numb1 * numb2
+        if str(mul) == str(mul)[::-1]:
+            if max_number < mul:
+            	max_number = mul
 
-print(max(li))
+print(max_number)

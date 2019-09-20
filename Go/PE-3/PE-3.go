@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-func max_prime(number int) int {
+func maxPrime(number int) int {
 	var d int = 2
 	for number > 1 {
 		for number % d == 0 {

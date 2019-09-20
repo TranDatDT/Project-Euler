@@ -12,7 +12,7 @@ import (
 	"strconv"
 )
 
-func Reverse(s string) string {
+func reverse(s string) string {
 	// Reverse a string
 	r := []rune(s)
 	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
@@ -22,11 +22,11 @@ func Reverse(s string) string {
 }
 
 func main() {
-	max_number := -1;
+	maxNumber := -1;
 	for num1 := 999; num1 > -1; num1-- {
 		for num2 := 999; num2 > -1; num2 -- {
 			mul := num1 * num2;
-			str_mul := strconv.Itoa(mul)
+			strMul := strconv.Itoa(mul)
 			if str_mul == Reverse(str_mul) {
 				if mul > max_number {
 					max_number = mul;

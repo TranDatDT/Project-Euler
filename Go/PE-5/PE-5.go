@@ -17,7 +17,7 @@ func main() {
 
 	lcm := 1
 
-	for i := 2; i<=n; i++ {
+	for i := 2; i <= n; i++ {
 		lcm = (lcm * i) / gcd(lcm, i)
 	}
 
